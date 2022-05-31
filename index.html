@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Form Project</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <section class="data-form w-50 m-4">
+        <h2>Introducere Date</h2>
+        <form>
+          <input
+            type="text"
+            class="form-control my-3"
+            id="firstname"
+            placeholder="Firstname"
+          />
+          <input
+            type="text"
+            class="form-control my-3"
+            id="lasname"
+            placeholder="Lastname"
+          />
+          <input
+            type="email"
+            class="form-control my-3"
+            id="email1"
+            aria-describedby="emailHelp"
+            placeholder="Email"
+          />
+          <input
+            type="number"
+            class="form-control my-3"
+            id="value"
+            placeholder="Value"
+          />
+          <p id="value-error"></p>
+          <p id="error"></p>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+      <section class="data-table w-50 m-4">
+        <h2>Adaugare Date</h2>
+        <table class="table table-sortable">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Otto</td>
+              <td>Mark</td>
+              <td>otto@gmail.com</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td scope="row">Thornton</td>
+              <td>Jacob</td>
+              <td>thornton@gmail.com</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td scope="row">Lee</td>
+              <td>Jake</td>
+              <td>jake@gmail.com</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <section class="buttons w-50 m-4">
+      <h2>Procesare Date</h2>
+      <div class="d-flex">
+        <button type="button" class="btn btn-primary m-3 average">
+          Calculeaza Media
+        </button>
+        <p class="average-value"></p>
+
+        <button type="button" class="btn btn-primary m-3 sort">
+          Ordoneaza Tabel
+        </button>
+        <button type="button" class="btn btn-primary m-3 highlight">
+          Evidentiaza Intrari
+        </button>
+      </div>
+    </section>
+
+    <section class="w-50 m-4">
+      <h2>Rezultat Procesare Date</h2>
+      <table class="table table-average">
+        <thead>
+          <tr>
+            <th scope="col">Procesare</th>
+            <th scope="col">Rezultat</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
